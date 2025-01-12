@@ -6,9 +6,10 @@ import 'package:training_discovery_app/screens/home_screen.dart';
 
 
 void main() {
-  runApp(MultiProvider(
+  runApp(
+      MultiProvider(
       providers: [
-        Provider<TrainingProvider>(create: (_) => TrainingProvider()),
+        ChangeNotifierProvider<TrainingProvider>(create: (_) => TrainingProvider()),
       ],
       child: MyApp()));
 }

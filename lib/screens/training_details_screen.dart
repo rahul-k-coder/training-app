@@ -14,17 +14,21 @@ class TrainingDetailsScreen extends StatelessWidget {
       appBar: AppBar(title: Text(training.name)),
       body: Padding(
         padding: EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.network(training.imageUrl, height: 200),
-            SizedBox(height: 10),
-            Text(training.name, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-            Text("Trainer: ${training.trainer}", style: TextStyle(fontSize: 18)),
-            Text("Location: ${training.location}", style: TextStyle(fontSize: 18)),
-            SizedBox(height: 10),
-            Text(training.description),
-          ],
+        child: SizedBox(
+          width: double.maxFinite,
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.network(training.imageUrl, height: 200 , width: 200,),
+              SizedBox(height: 10),
+              Text(training.name, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+              Text("Trainer: ${training.trainer}", style: TextStyle(fontSize: 18)),
+              Text("Location: ${training.location}", style: TextStyle(fontSize: 18)),
+              SizedBox(height: 10),
+              Text(training.description),
+            ],
+          ),
         ),
       ),
     );
