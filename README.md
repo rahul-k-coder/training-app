@@ -3,6 +3,8 @@ A new Flutter project.
 
 Apk Link =>>> https://drive.google.com/file/d/1XF40_S7J9tiufAuLEuxf83rLSlxioRBh/view?usp=sharing
 
+## Info : I don't have video recording tools available, so I can't record my code.
+
 ## Getting Started
 
 Steps to Implement the Project
